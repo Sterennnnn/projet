@@ -16,7 +16,6 @@ def process_line(line):
     return "Unknown command " + cmd
 
 
-
 def main():
     while True:
         try:
