@@ -18,6 +18,11 @@ def process_line(line):
     # Ajout de la commande manquante d'Alexis 
     if cmd == "count-words":
         return len(text.split())
+    if cmd == "prefix":
+        return text[:10]
+    if cmd == "length":
+        return len(text)
+
 
     return "Unknown command " + cmd
 
