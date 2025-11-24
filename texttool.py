@@ -12,18 +12,22 @@ def process_line(line):
         return text.upper()
     if cmd == "lowercase":
         return text.lower()
-<<<<<<< HEAD
+
     if cmd == "prefix":
         return text[:10]
-=======
+
     if cmd == "length":
         return len(text)
->>>>>>> sterenn/master
+
 
     return "Unknown command " + cmd
 
 
 def main():
+    """
+    Main CLI loop of TextTool.
+    Continuously reads user input and prints results from process_line().
+    """
     while True:
         try:
             line = input("commade> ")
