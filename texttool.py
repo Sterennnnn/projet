@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-
+"""
+TextTool: small CLI text processor for uppercase, lowercase, length,
+count-words, prefix, etc.
+"""
 def process_line(line):
     if " " not in line:
         return "No command or no argument given"
