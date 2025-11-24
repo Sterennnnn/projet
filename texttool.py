@@ -12,8 +12,13 @@ def process_line(line):
         return text.upper()
     if cmd == "lowercase":
         return text.lower()
+<<<<<<< HEAD
     if cmd == "prefix":
         return text[:10]
+=======
+    if cmd == "length":
+        return len(text)
+>>>>>>> sterenn/master
 
     return "Unknown command " + cmd
 
