@@ -13,6 +13,7 @@ def process_line(line):
         return text.upper()
     if cmd == "lowercase":
         return text.lower()
+
     if cmd == "length":
         return len(text)
     if cmd == "prefix":
@@ -23,6 +24,11 @@ def process_line(line):
         return len(text.split())
     if cmd == "prefix":
         return text[:10]
+
+    if cmd == "prefix":
+        return text[:10]
+
+
     if cmd == "length":
         return len(text)
 
@@ -31,6 +37,10 @@ def process_line(line):
 
 
 def main():
+    """
+    Main CLI loop of TextTool.
+    Continuously reads user input and prints results from process_line().
+    """
     while True:
         try:
             line = input("commade> ")
